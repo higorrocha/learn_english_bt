@@ -18,7 +18,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
   void initState() {
     super.initState();
     _tabController = TabController(
-        length: 3,
+        length: 2,
         vsync: this
     );
   }
@@ -44,8 +44,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
           controller: _tabController,
           tabs: [
             Tab(text: "Animals",),
-            Tab(text: "Numbers",),
-            Tab(text: "Vowels",),
+            Tab(text: "Numbers",)
           ],
         ),
       ),
@@ -53,8 +52,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
         controller: _tabController,
         children: [
           Animals(),
-          Numbers(),
-          Vowels()
+          Numbers()
         ],
       ),
     );
